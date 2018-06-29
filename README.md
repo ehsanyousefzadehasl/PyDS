@@ -55,7 +55,8 @@ I want to make you happy that you don't need to implement the stack in the pytho
 **Queue**
 Be Happy! Python has a built-in class for Queues and the following example shows how to use python built-in queues. But we are going to implement it ourselves, you can view it [here]()
 
-```import Queue
+```python
+import Queue
 q = Queue.Queue()
 for i in range(5):
     q.put(i)

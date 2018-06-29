@@ -56,12 +56,12 @@ I want to make you happy that you don't need to implement the stack in the pytho
 Be Happy! Python has a built-in class for Queues and the following example shows how to use python built-in queues. But we are going to implement it ourselves, you can view it [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Queue/queue.py)
 
 ```python
-import Queue
-q = Queue.Queue()
+import queue
+q = queue.Queue()
 for i in range(5):
     q.put(i)
 while not q.empty():
-    print q.get()
+    print(q.get())
 ```
 
 Season 2 Finished! Let's go to the next Season :)

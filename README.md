@@ -31,6 +31,7 @@ We can list the list-based collection as in following list
 
 **Python list**
 Python has an interesting data stucture called a "list" that is much more than a mere list. In fact, a Python list actually encompasses the functionality of almost every list-based data structure came above. 
+
 **Linked List**
 There is not a built-in data structure in python that look likes a linked list. but you can see how it is implementable in python v3 in [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Linked-List/linked-list.py)
 

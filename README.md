@@ -60,4 +60,9 @@ q = Queue.Queue()
 for i in range(5):
     q.put(i)
 while not q.empty():
-    print q.get()```
+    print q.get()
+```
+
+Season 2 Finished! Let's go to the next Season :)
+
+## Season 3 - Searching and Sorting

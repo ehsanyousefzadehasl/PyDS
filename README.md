@@ -25,8 +25,13 @@ We can list the list-based collection as in following list
     (2) fixed length
     (3) hard to exploit
     (4) Messy Insertion and Deletion (index finiding for accesses - shiftings are needed by the programmer - order: O(n) -> very inefficient) 
-2. **Linked Lists**: (1) Insertion and Deletion is more easier and neater than Array - Order O(1) - (2) Each element has the next element (or even previous element in DLL (Doubled Linked List)) pointer
+2. **Linked Lists**: 
+    (1) Insertion and Deletion is more easier and neater than Array - Order O(1) 
+    (2) Each element has the next element (or even previous element in DLL (Doubled Linked List)) pointer
 3. **Stacks**:
+    (1) Push and Pop Operations are done by order of O(1)
+    (2) We can use Linked List to implement a Stack by focusing on its head
+    (3) Stack is know as LIFO (Last-In-First-Out)
 4. **Queues**:
 
 **Python list**
@@ -35,4 +40,7 @@ Python has an interesting data stucture called a "list" that is much more than a
 **Linked List**
 There is not a built-in data structure in python that look likes a linked list. but you can see how it is implementable in python v3 in [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Linked-List/linked-list.py)
 
+**Stack**
+I want to make you happy that you don't need to implement the stack in the python because The Python has the stack functionality in built-in way. Python with `append()` and `pop()` functions does push and pop functionalities. You can find Stack implementation in python v3 [here]()
 
+**Queue**

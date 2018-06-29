@@ -18,3 +18,20 @@ This season is Done!
 
 The main Work starts from this point. Be Ready for Coding and Enjoying DS and DA :)
 
+We can list the list-based collection as in following list
+
+1. **Arrays**
+    (1) The most common implementation of Lists
+    (2) fixed length
+    (3) hard to exploit
+    (4) Messy Insertion and Deletion (index finiding for accesses - shiftings are needed by the programmer - order: O(n) -> very inefficient) 
+2. **Linked Lists**: (1) Insertion and Deletion is more easier and neater than Array - Order O(1) - (2) Each element has the next element (or even previous element in DLL (Doubled Linked List)) pointer
+3. **Stacks**:
+4. **Queues**:
+
+**Python list**
+Python has an interesting data stucture called a "list" that is much more than a mere list. In fact, a Python list actually encompasses the functionality of almost every list-based data structure came above. 
+**Linked List**
+There is not a built-in data structure in python that look likes a linked list. but you can see how it is implementable in python v3 in [here]()
+
+

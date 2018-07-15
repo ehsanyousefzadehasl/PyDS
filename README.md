@@ -79,4 +79,4 @@ Binary Search implementations code can be found here.[Iterative Implementation](
 **Bubble Sort**
 Other name for this sorting algorithm -> **Sinking Sort**
 
-It is a naive approach (Efficiency -> **O(n^2)**). In this algorithm we go through the list and comparing elements side by side and switching them on correct condition. This sorting algorithm python implementation can be found [here]().
+It is a naive approach (Efficiency -> **O(n^2)**). It is an in-place sorting algorithm, space complexity is constant **O(1)**. In this algorithm we go through the list and comparing elements side by side and switching them on correct condition. This sorting algorithm python implementation can be found [here]().

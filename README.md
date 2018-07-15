@@ -67,3 +67,10 @@ while not q.empty():
 Season 2 Finished! Let's go to the next Season :)
 
 ## Season 3 - Searching and Sorting
+**Linear Search**
+In this search method, we have to compare our key to all of the elements in the list one by one - **O(n)**
+
+**Binary Search**
+Requirement -> Our List has to be ordered -> So our sorting algorithm has effect on the total time complexity. - O(n) = max(O(log(n)), Sorting Method Time Complexity)
+
+Binary Search implementations code can be found here.[Iterative Implementation](), [Recursive Implementation]()

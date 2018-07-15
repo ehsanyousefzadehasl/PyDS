@@ -53,17 +53,24 @@ There is not a built-in data structure in python that look likes a linked list. 
 I want to make you happy that you don't need to implement the stack in the python because The Python has the stack functionality in built-in way. Python with `append()` and `pop()` functions does push and pop functionalities. You can find Stack implementation in python v3 [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Stack/stack.py)
 
 **Queue**
-Be Happy! Python has a built-in class for Queues and the following example shows how to use python built-in queues. But we are going to implement it ourselves, you can view it [here]()
+Be Happy! Python has a built-in class for Queues and the following example shows how to use python built-in queues. But we are going to implement it ourselves, you can view it [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Queue/queue.py)
 
 ```python
-import Queue
-q = Queue.Queue()
+import queue
+q = queue.Queue()
 for i in range(5):
     q.put(i)
 while not q.empty():
-    print q.get()
+    print(q.get())
 ```
 
 Season 2 Finished! Let's go to the next Season :)
 
 ## Season 3 - Searching and Sorting
+**Linear Search**
+In this search method, we have to compare our key to all of the elements in the list one by one - **O(n)**
+
+**Binary Search**
+Requirement -> Our List has to be ordered -> So our sorting algorithm has effect on the total time complexity. - O(n) = max(O(log(n)), Sorting Method Time Complexity)
+
+Binary Search implementations code can be found here.[Iterative Implementation](), [Recursive Implementation]()

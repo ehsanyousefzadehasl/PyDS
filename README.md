@@ -85,4 +85,18 @@ It is a naive approach (Efficiency -> **O(n^2)**). It is an in-place sorting alg
 
 **Merge Sort**
 
-It is a divide and conquer algorithm. It divides input array in two halves and then merges two halves. This sorting algorithm time complexity in three cases: best, average and worst is **O(nlogn)**. This sorting algorithm recurrence relation is **T(n)=2*T(n/2)+n**. This relation shows that in each step, merge sort divides the input array in 2 parts then merges that two sorted arrays in linear time. This is not a in-place sorting algorithm. It needs auxillary space from **O(n)** order.
+It is a divide and conquer algorithm. It divides input array in two halves and then merges two halves. This sorting algorithm time complexity in three cases: best, average and worst is **O(nlogn)**. This sorting algorithm recurrence relation is **T(n)=2*T(n/2)+n**. This relation shows that in each step, merge sort divides the input array in 2 parts then merges that two sorted arrays in linear time. This is not a in-place sorting algorithm. It needs auxillary space from **O(n)** order. Merge sort implementation can be found [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season2_search_sort/04-merge_sort.py).
+
+**Quick Sort**
+
+This is one of the most efficient sorting algorithms. In this algorithm, in each step we choose an element as pivot and move other elements in regards to the value of the chosen pivot. we continue recursively picking pivots in lower and upper section and it is continued until the whole array is sorted.
+
+This Sorting algorithm time complexity in three cases differs and this is what makes this algorithm an amazing one :D.
+
+Best Case: **O(nlogn)**, Average Case: **O(nlogn)**, Worst Case:  **O(n^2)** -> occurs when we have reversed sorted input
+
+This is an in-place sorting algorithm -> so space complexity is: **O(1)**
+
+**Note**: The intersting thing about this sorting algorithm is that, we can avoid worst case by having a function which shuffles our input list. So we'll always have **O(nlogn)**. It is important to add that the coefficient of the nlogn in merge sort is bigger that quich sort, So if you are questioned about choosing between merge sort and quick sort, don't think or anything else, only choose quick sort. 
+
+Quick sort implementation can be found [here]().

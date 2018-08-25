@@ -104,3 +104,49 @@ Quick sort implementation can be found [here](https://github.com/ehsanyousefzade
 In Data Structures, It is enough for sorting algorithms, we saw their most popular ones. We will examine them more on Algorithms repository which you can go there by this [link](https://github.com/ehsanyousefzadehasl/Algorithms/).
 
 ## Season 4 - Hashing
+
+**Set**
+
+set is a data structures that the stored content in it do not have any order. The elements never duplicate in a set. It is exactly like a abstract set concept in mathematics.
+
+**Map**
+
+Map is a data structure consisted of tuples (2 elemented tuples) or we can show it in a better way like **Map=<key, value>**. If we look to the keys and values as lists, it is important to say that key list is a set. It means that in a Map we don't have duplicated key, but we may have same values for multiple keys. For a better view you can consider the map as a dictionary. It is implemented with dictionary keyword (**dict**) in python programming language.
+
+Look at the Following exmaple:
+
+```python
+our_dictionary = dict()
+our_dictionary['a'] = 1
+our_dictionary['b'] = 2
+our_dictionary['c'] = 3
+our_dictionary['d'] = 4
+our_dictionary['e'] = 5
+our_dictionary['f'] = 6
+our_dictionary['g'] = 7
+
+print(our_dictionary)
+# {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7}
+```
+
+Dictionaries are wonderfully flexible—you can store a wide variety of structures as values. You store another dictionary or a list. Look at the following example:
+
+```python
+our_dictionary = dict()
+our_dictionary['a'] = [1]
+our_dictionary['b'] = [2]
+our_dictionary['c'] = [3]
+our_dictionary['d'] = [4]
+our_dictionary['b'].append(5)
+our_dictionary['e'] = [6]
+our_dictionary['f'] = [7]
+our_dictionary['g'] = [8]
+our_dictionary['h'] = [9]
+our_dictionary['i'] = [10]
+print(our_dictionary)
+# {'a': [1], 'b': [2, 5], 'c': [3], 'd': [4], 'e': [6], 'f': [7], 'g': [8], 'h': [9], 'i':[10]}
+```
+
+There is a good solved exercise for playing with the dictionaries is [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season3_hashing/01-dict_example.py).
+
+**Hashing**

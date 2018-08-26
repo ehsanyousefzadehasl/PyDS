@@ -149,4 +149,40 @@ print(our_dictionary)
 
 There is a good solved exercise for playing with the dictionaries is [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season3_hashing/01-dict_example.py).
 
-**Hashing**
+### Hashing
+
+Now, if we want to find a element in our previously checked data structures - like list - except stack and priority queues, we have to linear time search. So, we like to get an ability to be able to search for and find each element constantly. Hash Functions help us to get this ability.
+
+**Hash Functions**
+
+Purpose of hash function: Transforming some value into one that can be stored and retrieved easily.
+
+Hash function inputs some value, converts the value based on some formula and produces a coded version of the value that's often the index in an array.
+
+**Collision Concept**
+
+The collision occurs when a hash function produces the same hash value for two differrent inputs.
+
+This problem can be solved by two methods:
+
+1. Changing the value in the hash function or the hash function completely - **Requirement is a lot of space to store your values and totally effects the complexity in terms of both size and time**
+2. Changing the structure of the hashed values array - instead of storing one hash value in each slot, store some type of lists that contains all values hashed at that spot -> These lists are generally called buckets in this context - **Requirement: Iteration through some collection**
+
+Hash functions have a constant lookup time in the average case, but because of the bucket system, you could end up storing every value in one bucket and then you are essentially just iterating through a list. In that worst case this actually turns into O(m).
+
+**Note:** There is no one perfect way to design a hash function. We have to be aware to nature of our data and choose the most appropriate one to our job.
+
+**Good Idea:** Inside a large bucket we can use another hash function to split up those elements even more
+
+**Emphasize:** There is No perfect way to design a hash function
+
+**Load Factor:** This gives us a sense of how "full" a hash table is.
+
+Load Factor = (Number of Entries - values wanna to hash) / (Number of Buckets)
+
+**Note:** Load factor closer to 1 is better - when it is 1 meaning the number of values equals the number of buckets, the better it would be for us to rehash and add more buckets.
+
+**Note:** Any table with a load value greater than 1 is guaranteed to have collisions.
+
+### Hash Map
+

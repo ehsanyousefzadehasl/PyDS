@@ -39,7 +39,7 @@ We can list the list-based collection as in following list
     (4) Enqueue -> Adding an Element to the tail
     (5) Dequeue -> Removing the Head Element
     (6) Peak Operation -> Viewing Head Element without changing it
-    (7) It is implementable by a Linked-List
+    (7) It can be implemented by a Linked-List
     (8) Deque --> It is a double ended queue that goes both ways. We can enqueue and dequeue from either end. A Deque is a general version of both stacks and queues.
     (9) Priority Queue: Each element has a priority number when we insert them into the queue. When we are going to dequeue, element with maximum priority goes to be removed.
 
@@ -47,7 +47,7 @@ We can list the list-based collection as in following list
 Python has an interesting data stucture called a "list" that is much more than a mere list. In fact, a Python list actually encompasses the functionality of almost every list-based data structure came above. 
 
 **Linked List**
-There is not a built-in data structure in python that look likes a linked list. but you can see how it is implementable in python v3 in [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Linked-List/linked-list.py)
+There is not a built-in data structure in python that look likes a linked list. but you can see how it is implemented in python v3 in [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Linked-List/linked-list.py)
 
 **Stack**
 I want to make you happy that you don't need to implement the stack in the python because The Python has the stack functionality in built-in way. Python with `append()` and `pop()` functions does push and pop functionalities. You can find Stack implementation in python v3 [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season1_List_based_Collection/Stack/stack.py)

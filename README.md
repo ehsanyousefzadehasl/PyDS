@@ -212,10 +212,12 @@ For trees, we have 2 kinds (1) Connected - all nodes are connected to each other
 
 ### Tree Traversal
 
-Tree is not a linear data structure like a list, so there is no clear way to traverse through every element. The tree traverse is important because without visiting all elements, searching and sorintg the elements can not be correctly done. There are two ways to traverse trees: **DFS (Depth First Search)**, **BFS (Breadth First Search)**
+Tree is not a linear data structure like a list, so there is no clear way to traverse through every element. The tree traverse is important because without visiting all elements, searching and sorintg the elements can not be correctly done. There are two broad ways to traverse trees: **DFS (Depth First Search)**, **BFS (Breadth First Search)**
 
 ##### DFS (Depth First Search)
-DFS is a recursive concept which there is a child to visited go inside and repeat it.
+DFS is a recursive concept which there is a child to visited go inside and repeat it. There are several approaches to DFS a tree: (1) **Pre-order** -> We check off a node as we see it in this approach. (2) **In-order** -> We check off a node when we have checked off its left child. (3) **Post-order** -> We check off a node when we have checked off its left and right child.
 
 ##### BFS (Breadth First Search)
 BFS is a level order traverse which all nodes in a same level are visited then movement to higher level occurs.
+
+#### Binary Trees

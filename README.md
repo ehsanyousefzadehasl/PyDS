@@ -151,7 +151,7 @@ There is a good solved exercise for playing with the dictionaries is [here](http
 
 ### Hashing
 
-Now, if we want to find a element in our previously checked data structures - like list - except stack and priority queues, we have to linear time search. So, we like to get an ability to be able to search for and find each element constantly. Hash Functions help us to get this ability.
+Now, if we want to find an element in our previously checked data structures - like list - except stack and priority queues, we have to linear time search. So, we like to get an ability to be able to search for and find each element constantly. Hash Functions help us to get this ability.
 
 **Hash Functions**
 
@@ -214,10 +214,21 @@ For trees, we have 2 kinds (1) Connected - all nodes are connected to each other
 
 Tree is not a linear data structure like a list, so there is no clear way to traverse through every element. The tree traverse is important because without visiting all elements, searching and sorintg the elements can not be correctly done. There are two broad ways to traverse trees: **DFS (Depth First Search)**, **BFS (Breadth First Search)**
 
-##### DFS (Depth First Search)
+#### DFS (Depth First Search)
 DFS is a recursive concept which there is a child to visited go inside and repeat it. There are several approaches to DFS a tree: (1) **Pre-order** -> We check off a node as we see it in this approach. (2) **In-order** -> We check off a node when we have checked off its left child. (3) **Post-order** -> We check off a node when we have checked off its left and right child.
 
-##### BFS (Breadth First Search)
+#### BFS (Breadth First Search)
 BFS is a level order traverse which all nodes in a same level are visited then movement to higher level occurs.
 
-#### Binary Trees
+### Binary Trees
+Binary trees are trees that parents have at most 2 children. 
+
+Searching for an element on a tree with **n** number of elements is from **O(n)** time complexity, because we traverse the tree in a linear way and there is no relation between the parent and its children values. 
+
+Deleting an element from a binary tree has **O(n)** time complexity because search operation and some additional shift operations are needed to have a connected tree.
+
+Inserting an element to a binary tree has **O(height of the tree)** time complexity, because in the worst case, we have to move equal to the height of the binary tree. In a perfect binary tree in level **l** we have **(2 ^ (level - 1))** nodes, so the insertion complexity is **O(log(n))**.
+
+You can find a implementation of a BT (Binary Tree) [here]().
+
+### Binary Search Tree (BST)

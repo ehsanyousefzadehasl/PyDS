@@ -229,6 +229,6 @@ Deleting an element from a binary tree has **O(n)** time complexity because sear
 
 Inserting an element to a binary tree has **O(height of the tree)** time complexity, because in the worst case, we have to move equal to the height of the binary tree. In a perfect binary tree in level **l** we have **(2 ^ (level - 1))** nodes, so the insertion complexity is **O(log(n))**.
 
-You can find a implementation of a BT (Binary Tree) [here]().
+You can find a implementation of a BT (Binary Tree) [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season4_tree/01_binary_tree.py).
 
 ### Binary Search Tree (BST)

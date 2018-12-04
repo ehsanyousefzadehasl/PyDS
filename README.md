@@ -193,3 +193,29 @@ Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter
 You can see the Python function ord() which goes to get the ASCII value of a letter, and chr() to get the letter associated with an ASCII value. You see that there is a HashTable class and methods to store and lookup values, and a helper function to calculate a hash value given a string.
 
 ## Part 5 - Trees
+For understanding this part, first you need to be familiar with graph theory and tree concept from discrete structures course but we are going to shortly review some important concepts. 
+**Tree**: is really an extension of linked list. In a linked list, each element points only to next element (we consider it a horizontal structure) but in a tree each element can point to some elements (we consider it a vertical structure).
+
+For trees, we have 2 kinds (1) Connected - all nodes are connected to each other - (2) Unconnected -there are two nodes that there is not any path from them to each other-.
+
+**A cycle in a tree**: occurs when on a path we encounter a node twice.
+
+**Level of a node**: in a Tree is the number of connection which should has been taken to reach the root plus 1.
+
+**Child and parent terminology**: The node with higher level is the child of the node with that level minus 1. Note that in a tree, a node may have both child and parent roles. The node with lowest level is **Ancestor** and the with highest level is Descendant.
+
+**Leaf**: The node in a tree which has not any child. It's other name is **external node**. The nodes other than leaves are called **Internal Leaves**.
+
+**Height of a node**: is the number of edges between the node and the furthest leaves. The height of a tree is equal to the height of the root. (Height of a leaf is zero)
+
+**Depth of a node**: is the number of edges between the root and the node.
+
+### Tree Traversal
+
+Tree is not a linear data structure like a list, so there is no clear way to traverse through every element. The tree traverse is important because without visiting all elements, searching and sorintg the elements can not be correctly done. There are two ways to traverse trees: **DFS (Depth First Search)**, **BFS (Breadth First Search)**
+
+##### DFS (Depth First Search)
+DFS is a recursive concept which there is a child to visited go inside and repeat it.
+
+##### BFS (Breadth First Search)
+BFS is a level order traverse which all nodes in a same level are visited then movement to higher level occurs.

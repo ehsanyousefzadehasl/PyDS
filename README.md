@@ -185,4 +185,11 @@ Load Factor = (Number of Entries - values wanna to hash) / (Number of Buckets)
 **Note:** Any table with a load value greater than 1 is guaranteed to have collisions.
 
 ### Hash Map
+Hash maps are one the main places that we can see hash functions show up. A Python dictionary is a hash map.
+There is a good example which is implemented in Python and you can see it [here](). This example has written a hash table and hash function that uses string keys. This hash table stores strings in buckets by their first two letters, according to the following formula:
 
+Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter 
+
+You can see the Python function ord() which goes to get the ASCII value of a letter, and chr() to get the letter associated with an ASCII value. You see that there is a HashTable class and methods to store and lookup values, and a helper function to calculate a hash value given a string.
+
+## Season 5 - Trees

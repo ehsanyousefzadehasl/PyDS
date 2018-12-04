@@ -227,10 +227,31 @@ Searching for an element on a tree with **n** number of elements is from **O(n)*
 
 Deleting an element from a binary tree has **O(n)** time complexity because search operation and some additional shift operations are needed to have a connected tree.
 
-Inserting an element to a binary tree has **O(height of the tree)** time complexity, because in the worst case, we have to move equal to the height of the binary tree. In a perfect binary tree in level **l** we have **(2 ^ (level - 1))** nodes, so the insertion complexity is **O(log(n))**.
+Inserting an element to a binary tree has **O(height of the tree)** time complexity, because in the worst case, we have to move equal to the height of the binary tree. In a perfect binary tree in level **L** we have **(2 ^ (L - 1))** nodes, so the insertion complexity is **O(log(n))**.
 
 You can find a implementation of a BT (Binary Tree) [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season4_tree/01_binary_tree.py).
 
 ### Binary Search Tree (BST)
 BST is a binary tree (We add a more rule to binary trees and name them Binary Search Trees) that for any node on it, the node's value is smaller than its right child's value and larger than its left child's value. This tree is good for doing search operation. If BST be a balanced tree, the search complexity is **O(log(n))** - we consider it common case -. In the worst case our BST will be an unbalanced binary tree like a chain, in this situation the complexity will be **O(n)**. You can find a BST implementation [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season4_tree/02_BST.py).
 
+### Heaps
+Heap is another specific type of tree with its own rules. In a heap elements are arranged in a increasing or decreasing order such that the root element is either the maximum element or the minimum element of the tree. There are two different types of heaps: (1) **Max Heaps** - a parent always has a value larger than its children values and the root value the maximum number of the tree - (2) **Min Heaps** - a parent always has a value smaller than its children values and the root value the minimum number of the tree
+
+**Note**: Heaps don't need to be a binary tree.
+
+**Heaps Time Complexity Analysis**: in a max/ min heap, finding max/ min element is done by **O(1)** complexity. Searching for an element complexity is **O(n)**.
+
+**Heapify**: is the operation which in we reorder the elements based on the **heap**.
+
+**Extract**: is the operation of elimination the root and bringing the rightest last level leaf to the root and Heapifying the tree.
+
+**Note**: The time complexity of **Extract** operation is **O(log(n))** because we may swip the root to the number equal to height of the tree.
+
+**Note**: Every sorted array can be shown as a **heap**.
+
+**Note**: If we receive a series of number one after another, we can put them in a suitable heap then we'll be able to create a increasing/ decreasing list of the given numbers.
+
+### Self Balancing Trees
+The tree that minimizes the number of levels that it uses. There are some algorithms with insertion and deletion to keep it balanced and nodes themselves might have additional properties. The most common example of these trees is **Red-Black** tree which is **an extension of BST**. In red-black trees, the nodes have one additional property, **color**. All leaf nodes must be colored black. If a node is red, both of its children must be black. The rule which is optional is that the color of the root must be black. Every path from a node to its descendant null nodes must contain the same number of black nodes. These rules guarantee that the tree will change to a unbalanced tree.
+
+## Part 5 - Graphs

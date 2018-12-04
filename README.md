@@ -2,7 +2,7 @@
 
 This repository aims to implement popular data structures with python programming language Version 3
 
-## Season 1 - Introduction and Efficiency
+## Part 1 - Introduction and Efficiency
 Efficiency: In Algorithm Concept, It is also called Complexity. It is how well you are using your computer resources to get a particular job done. We can Think about it in terms of Space (How Much Storage Space Needed?) and Time (How Long the Code takes to Run?).
 
 The important Tradeoff in Algorithms Complexity Discussion:
@@ -12,9 +12,9 @@ The important Tradeoff in Algorithms Complexity Discussion:
 
 Open an Algorithm Book and read the Complexity Notations which we use for explaining algorithms complexity too in this repository
 
-This season is Done!
+This Part is Done!
 
-## Season 2 - List-based Collection
+## Part 2 - List-based Collection
 
 The main Work starts from this point. Be Ready for Coding and Enjoying DS and AD :)
 
@@ -64,9 +64,9 @@ while not q.empty():
     print(q.get())
 ```
 
-Season 2 Finished! Let's go to the next Season :)
+Part 2 Finished! Let's go to the next Part :)
 
-## Season 3 - Searching and Sorting
+## Part 3 - Searching and Sorting
 **Linear Search**
 In this search method, we have to compare our key to all of the elements in the list one by one - **O(n)**
 
@@ -103,7 +103,7 @@ Quick sort implementation can be found [here](https://github.com/ehsanyousefzade
 
 In Data Structures, It is enough for sorting algorithms, we saw their most popular ones. We will examine them more on Algorithms repository which you can go there by this [link](https://github.com/ehsanyousefzadehasl/Algorithms/).
 
-## Season 4 - Hashing
+## Part 4 - Hashing
 
 **Set**
 
@@ -186,10 +186,10 @@ Load Factor = (Number of Entries - values wanna to hash) / (Number of Buckets)
 
 ### Hash Map
 Hash maps are one the main places that we can see hash functions show up. A Python dictionary is a hash map.
-There is a good example which is implemented in Python and you can see it [here](). This example has written a hash table and hash function that uses string keys. This hash table stores strings in buckets by their first two letters, according to the following formula:
+There is a good example which is implemented in Python and you can see it [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season3_hashing/02-String_Keys_Practice.py). This example has written a hash table and hash function that uses string keys. This hash table stores strings in buckets by their first two letters, according to the following formula:
 
 Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter 
 
 You can see the Python function ord() which goes to get the ASCII value of a letter, and chr() to get the letter associated with an ASCII value. You see that there is a HashTable class and methods to store and lookup values, and a helper function to calculate a hash value given a string.
 
-## Season 5 - Trees
+## Part 5 - Trees

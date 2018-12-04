@@ -232,3 +232,4 @@ Inserting an element to a binary tree has **O(height of the tree)** time complex
 You can find a implementation of a BT (Binary Tree) [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season4_tree/01_binary_tree.py).
 
 ### Binary Search Tree (BST)
+BST is a binary tree (We add a more rule to binary trees and name them Binary Search Trees) that for any node on it, the node's value is smaller than its right child's value and larger than its left child's value. This tree is good for doing search operation. If BST be a balanced tree, the search complexity is **O(log(n))** - we consider it common case -. In the worst case our BST will be an unbalanced binary tree like a chain, in this situation the complexity will be **O(n)**. You can find a BST implementation [here]().

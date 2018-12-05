@@ -1,27 +1,27 @@
 # Data-Structures
 
-This repository aims to implement popular data structures with python programming language Version 3
+This repository aims to review and implement popular data structures with python programming language (Version 3)
 
-## Part 1 - Introduction and Efficiency
-Efficiency: In Algorithm Concept, It is also called Complexity. It is how well you are using your computer resources to get a particular job done. We can Think about it in terms of Space (How Much Storage Space Needed?) and Time (How Long the Code takes to Run?).
+## Part 1 - Introduction - efficiency
+**Efficiency**: In algorithms concept, It is also called **complexity**. It is how well you are using your computer resources to get a particular job done. We can think about it in terms of **space** (How much storage space needed?) and time (How long the code takes to run?).
 
-The important Tradeoff in Algorithms Complexity Discussion:
+The important tradeoff in algorithms complexity discussion:
 
 1. Time Efficiency
 2. Storage Space Efficiency
 
-Open an Algorithm Book and read the Complexity Notations which we use for explaining algorithms complexity too in this repository
+Open an algorithms&dataStructures book and study the complexity notations (It won't take much time) which we are going to use for explaining the algorithms complexity in this repository also,
 
 This Part is Done!
 
 ## Part 2 - List-based Collection
 
-The main Work starts from this point. Be Ready for Coding and Enjoying DS and AD :)
+The main work begins here. Be ready for coding and enjoying DataS and AD :)
 
-We can list the list-based collection as in following list
+We can review the list of the list-based data structures in following order:
 
 1. **Arrays**
-    (1) The most common implementation of Lists
+    (1) The most common implementation of the Lists
     (2) fixed length
     (3) hard to exploit
     (4) Messy Insertion and Deletion (index finiding for accesses - shiftings are needed by the programmer - order: O(n) -> very inefficient) 

@@ -254,4 +254,4 @@ Heap is another specific type of tree with its own rules. In a heap elements are
 ### Self Balancing Trees
 The tree that minimizes the number of levels that it uses. There are some algorithms with insertion and deletion to keep it balanced and nodes themselves might have additional properties. The most common example of these trees is **Red-Black** tree which is **an extension of BST**. In red-black trees, the nodes have one additional property, **color**. All leaf nodes must be colored black. If a node is red, both of its children must be black. The rule which is optional is that the color of the root must be black. Every path from a node to its descendant null nodes must contain the same number of black nodes. These rules guarantee that the tree will change to a unbalanced tree.
 
-## Part 5 - Graphs
+## Part 6 - Graphs

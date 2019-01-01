@@ -345,3 +345,19 @@ Unfortunately, having both makes insertion a bit complicated. We can assume that
       self.edges.append(new_edge)
 ```
 We can extract other representation forms (edge list, adjacency list and adjacency matrix) of the graph with above implementation. You can see it [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season5_graph/Graph_representation.py).
+### Graph Traversal
+This is exactly like tree traversal, because tree is a specific type of graph.
+#### DFS - Depth First Search
+In a graph, there is no root so there is no obvious place to start. Traversal starts with any node then it is selected as seen. A common implementation of DFS uses a stack, so the node can be stored that it just been seen on the stack. Next, an edge is picked and the leading node is selected as seen and is added to the stack. Untill there are unseen edges and nodes, we continue to traverse the graph. When a node is hit that is has been seen before, going back the previous node occurs and trying another node happens. If all of the edges with new nodes is run out, the current node of the stack is poped. This will continue till all of the nodes in the finishes. Another common implementation of the DFS is a recursive approach which does not use stack. This approach repeats the process of picking and edge and marking a node as seen till all of the nodes to be run out. The complexity of graph traversal is **O(2|E|+|V|)** because each node and edge are visited once and twice.
+#### BFS - Breadth First Search
+We start with the first node and mark it as seen, then visit a node adjacent to it. Once we mark that node, we can add it to a queue. When we have run out of edges, we can just dequeue a node from the queue and use that as our next starting node. We look at every node adjacent to that one, adding each one to the stack untill we have exhausted our options. It is important to note that when we dequeue, we are getting a node adjacent to the one that we started with. The efficiency is still **O(|E|+|V|)**.
+
+**Note** We can envision BFS as creating a tree out of a graph. The node that we started with become the root and the group of adjacent nodes is the next level in the tree.
+
+You can see visualization of [DFS](https://www.cs.usfca.edu/~galles/visualization/DFS.html) and [BFS](https://www.cs.usfca.edu/~galles/visualization/BFS.html).
+
+You can see how it is implemented [here]().
+
+Read about specific paths and cycle like eulerian and hamiltonian ones. I will add them in next commits.
+## Case Studies in Algorithms
+### Shortest Path Problem

@@ -255,3 +255,93 @@ Heap is another specific type of tree with its own rules. In a heap elements are
 The tree that minimizes the number of levels that it uses. There are some algorithms with insertion and deletion to keep it balanced and nodes themselves might have additional properties. The most common example of these trees is **Red-Black** tree which is **an extension of BST**. In red-black trees, the nodes have one additional property, **color**. All leaf nodes must be colored black. If a node is red, both of its children must be black. The rule which is optional is that the color of the root must be black. Every path from a node to its descendant null nodes must contain the same number of black nodes. These rules guarantee that the tree will change to a unbalanced tree.
 
 ## Part 6 - Graphs
+The purpose of the graph is to show how different things are connected to each other. Graph is sometimes called **network**. Tree is a more specific type of Graph. You can google for a graph example and see one of them on web.
+Both edges and nodes can contain data (edges can contain data or no data).
+
+**Directed Graph**: The graph that its edges have a sense of direction.
+
+**Cycle**: It happens in a graph when you can start at one node and follow edges all the way back to that node. **Acyclic** graph is a graph which has no cycles in it. **Cyclic** graphs can make algorithmic problems for us when we try to traverse it (may go through the same cycle (sequence of code) again and again in an infinite loop).
+
+**Disconnected Graph**: is a graph that has some vertex that can't be reached by the other vertices. That unreachable vertex is called **disconnected vertex** or **disconnected node**.
+
+**Grpah Connectivity Factor**: The minumum number of elements that need to be removed for a graph to become disconnected. For answering the question of strength of two differnet graph, we use this factor.
+
+**Weakly Connected**
+A directed graph is weakly connected when only replacing all of the directed edges with undirected edges can cause it to be connected. Imagine that your graph has several vertices with one outbound edge, meaning an edge that points from it to some other vertex in the graph. There's no way to reach all of those vertices from any other vertex in the graph, but if those edges were changed to be undirected all vertices would be easily accessible.
+
+**Connected**
+Here we only use "connected graph" to refer to undirected graphs. In a connected graph, there is some path between one vertex and every other vertex.
+
+**Strongly Connected**
+Strongly connected directed graphs must have a path from every node and every other node. So, there must be a path from A to B AND B to A.
+
+### Graph Representation
+We can implement it in object oriented paradigm but operations like traverse can be more inconvinient. There are several ways to represent connections on simple graphs that only use lists.
+#### Edge list
+It is simply a list of edges. The edges themselves are represented by a list of two elements. Those elements are normally numbers that correspond to ID numbers for vertices.
+#### Adjacency list
+In this list, vertices normally have an ID number that corresponds to the index in an array. In this array, each space is used to store a list of nodes that the node with that ID is adjacent to.
+#### Adjacency Matrix
+Matrix == rectangular array :D
+
+The adjacency matrix is actually similar to the adjacency list. The indices in the outer array still represent nodes with those IDs and the list inside still represents which nodes are adjacent. The inner list has one slot for every node in the array where node IDs map to array indices. If there is an edge between two nodes, 1 goes into the array in the appropriate position.
+
+**Note**: A single edge shows up twice in the matrix, because we listed all of the nodes but we know that each edge is connected to two nodes and we fill up the inner arrays for both of the nodes.
+You should become comfortable with various graph representations—graphs crop up often in interviews and in computer science in general, and you could need to represent it in any of it's forms. 
+
+**Note**: A single edge shows up sngle time in the adjacency list.
+
+Graph have two different components: Nodes and Edges. 
+```python
+class Node(object):
+    def __init__(self, value):
+        self.value = value
+        self.edges = []
+```        
+Nodes are pretty much the same as they were in trees. Instead of having a set number of children, each node has a list of Edges. 
+```python
+class Edge(object):
+    def __init__(self, value, node_from, node_to):
+        self.value = value
+        self.node_from = node_from
+        self.node_to = node_to
+```        
+Here, we assume that edges have both a value and a direction. An edge points from one node to another—the node it starts at is the node_from and the node it ends at is the node_to. You can envision it as node_from -> node_to. 
+
+The base of the Graph class looks something like this:
+```python
+class Graph(object):
+    def __init__(self, nodes=[], edges=[]):
+        self.nodes = nodes
+        self.edges = edges
+```
+A Graph class contains a list of nodes and edges. You can sometimes get by with just a list of edges, since edges contain references to the nodes they connect to, or vice versa. However, our Graph class is built with both for the following reasons: 
+
+If you're storing a disconnected graph, not every node will be tied to an edge, so you should store a list of nodes.
+We could probably leave it there, but storing an edge list will make our lives much easier when we're trying to print out different types of graph representations. 
+Unfortunately, having both makes insertion a bit complicated. We can assume that each value is unique, but we need to be careful about keeping both nodes and edges updated when either is inserted. You'll also be given these insertion functions to help you out:
+```python
+  def insert_node(self, new_node_val):
+      new_node = Node(new_node_val)
+      self.nodes.append(new_node)
+
+  def insert_edge(self, new_edge_val, node_from_val, node_to_val):
+      from_found = None
+      to_found = None
+      for node in self.nodes:
+          if node_from_val == node.value:
+              from_found = node
+          if node_to_val == node.value:
+              to_found = node
+      if from_found == None:
+          from_found = Node(node_from_val)
+          self.nodes.append(from_found)
+      if to_found == None:
+          to_found = Node(node_to_val)
+          self.nodes.append(to_found)
+      new_edge = Edge(new_edge_val, from_found, to_found)
+      from_found.edges.append(new_edge)
+      to_found.edges.append(new_edge)
+      self.edges.append(new_edge)
+```
+We can extract other representation forms (edge list, adjacency list and adjacency matrix) of the graph with above implementation. You can see it [here](https://github.com/ehsanyousefzadehasl/Data-Structures/blob/master/season5_graph/Graph_representation.py).

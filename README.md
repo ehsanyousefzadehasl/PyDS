@@ -361,3 +361,6 @@ You can see how it is implemented [here]().
 Read about specific paths and cycle like eulerian and hamiltonian ones. I will add them in next commits.
 ## Case Studies in Algorithms
 ### Shortest Path Problem
+The shortest path in a weighted graph (graph that its edges has weights) is the path that the sum of the edges is as small as possible. In a unweighted graph, the shortest path would just be the one with the fewest number of edges. The solution to the shortest path problem an unweighted graph is just actually a Breadth First Search. With BFS, you start at one node and visit the closest node first, slowly moving out to more distant nodes untill you find the one that you were looking for. When there is no weights, you just want to find the path with the least number of edges.
+#### Dijkstra's Algorithm
+It is a solution to the shortest path problem for weighted undirected graphs. 
